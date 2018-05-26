@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JsonLuisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResultResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFuzzyResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JsonLuisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFuzzyResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFuzzyResultResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActionResult">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JsonLuisResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetActionResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetActionResultResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBooksList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="actionId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBooksListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBooksListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDefaultResult">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDefaultResultResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDefaultResultResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResultSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResult" />
+  </wsdl:message>
+  <wsdl:message name="GetResultSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFuzzyResultSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFuzzyResult" />
+  </wsdl:message>
+  <wsdl:message name="GetFuzzyResultSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFuzzyResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetActionResultSoapIn">
+    <wsdl:part name="parameters" element="tns:GetActionResult" />
+  </wsdl:message>
+  <wsdl:message name="GetActionResultSoapOut">
+    <wsdl:part name="parameters" element="tns:GetActionResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBooksListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBooksList" />
+  </wsdl:message>
+  <wsdl:message name="GetBooksListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBooksListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultResultSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDefaultResult" />
+  </wsdl:message>
+  <wsdl:message name="GetDefaultResultSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDefaultResultResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService1Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResult">
+      <wsdl:input message="tns:GetResultSoapIn" />
+      <wsdl:output message="tns:GetResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuzzyResult">
+      <wsdl:input message="tns:GetFuzzyResultSoapIn" />
+      <wsdl:output message="tns:GetFuzzyResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActionResult">
+      <wsdl:input message="tns:GetActionResultSoapIn" />
+      <wsdl:output message="tns:GetActionResultSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksList">
+      <wsdl:input message="tns:GetBooksListSoapIn" />
+      <wsdl:output message="tns:GetBooksListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultResult">
+      <wsdl:input message="tns:GetDefaultResultSoapIn" />
+      <wsdl:output message="tns:GetDefaultResultSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService1Soap" type="tns:WebService1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResult">
+      <soap:operation soapAction="http://tempuri.org/GetResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuzzyResult">
+      <soap:operation soapAction="http://tempuri.org/GetFuzzyResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActionResult">
+      <soap:operation soapAction="http://tempuri.org/GetActionResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksList">
+      <soap:operation soapAction="http://tempuri.org/GetBooksList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultResult">
+      <soap:operation soapAction="http://tempuri.org/GetDefaultResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService1Soap12" type="tns:WebService1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResult">
+      <soap12:operation soapAction="http://tempuri.org/GetResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuzzyResult">
+      <soap12:operation soapAction="http://tempuri.org/GetFuzzyResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetActionResult">
+      <soap12:operation soapAction="http://tempuri.org/GetActionResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBooksList">
+      <soap12:operation soapAction="http://tempuri.org/GetBooksList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultResult">
+      <soap12:operation soapAction="http://tempuri.org/GetDefaultResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService1">
+    <wsdl:port name="WebService1Soap" binding="tns:WebService1Soap">
+      <soap:address location="http://iflow.rrd.com/iflow/botservice/webService1.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService1Soap12" binding="tns:WebService1Soap12">
+      <soap12:address location="http://iflow.rrd.com/iflow/botservice/webService1.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

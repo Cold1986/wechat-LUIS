@@ -1,0 +1,122 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebService", "WebService\", "{A0224C39-40E9-4365-BBCD-E470FAC54244}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{3F8CFF83-D9B4-4835-9DD4-CA738355D271}|CommonLogic.dll;{3208129C-F559-4D7C-9A27-F2C7A05E023D}|WebService.Enum.dll;{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404}|WebService.Contract.dll;{973EAE45-71B6-4146-9EF7-E77DDCADA24F}|WeChatLogic.dll;{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9}|WebService.Facade.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WebService"
+		Debug.AspNetCompiler.PhysicalPath = "WebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebService"
+		Release.AspNetCompiler.PhysicalPath = "WebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "40628"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.WebService", "01.WebService", "{3F8A3CBF-543C-455D-972B-BCECBAADB392}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Facade", "02.Facade", "{39B98875-DB7E-4653-8B23-343BF6C9CE49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Models", "03.Models", "{2462AB6C-7BEA-43FE-BC05-525A9E9FA9E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.BLL", "04.BLL", "{119DF253-7B9C-4187-A72D-E422CF908200}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.DAL", "05.DAL", "{1D01F7D7-02E7-4511-914F-FBBCFB2A778A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLogic", "CommonLogic\CommonLogic.csproj", "{3F8CFF83-D9B4-4835-9DD4-CA738355D271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.Enum", "WebService.Enum\WebService.Enum.csproj", "{3208129C-F559-4D7C-9A27-F2C7A05E023D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.Contract", "WebService.Contract\WebService.Contract.csproj", "{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeChatLogic", "WeChatLogic\WeChatLogic.csproj", "{973EAE45-71B6-4146-9EF7-E77DDCADA24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService.Facade", "WebService.Facade\WebService.Facade.csproj", "{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.WebHost", "00.WebHost", "{4DB3AF81-2593-427D-931C-DE99756EEDE9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WeChat", "..\WeChat\", "{45F294BE-2F2F-4B85-948D-FD0C63166FB7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{3F8CFF83-D9B4-4835-9DD4-CA738355D271}|CommonLogic.dll;{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9}|WebService.Facade.dll;{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404}|WebService.Contract.dll;{3208129C-F559-4D7C-9A27-F2C7A05E023D}|WebService.Enum.dll;{973EAE45-71B6-4146-9EF7-E77DDCADA24F}|WeChatLogic.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WeChat"
+		Debug.AspNetCompiler.PhysicalPath = "..\WeChat\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WeChat\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WeChat"
+		Release.AspNetCompiler.PhysicalPath = "..\WeChat\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WeChat\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "28396"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "..\web\web.csproj", "{A1D88834-B4FF-4C3B-910F-6829D6AC7F86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0224C39-40E9-4365-BBCD-E470FAC54244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0224C39-40E9-4365-BBCD-E470FAC54244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0224C39-40E9-4365-BBCD-E470FAC54244}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0224C39-40E9-4365-BBCD-E470FAC54244}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3F8CFF83-D9B4-4835-9DD4-CA738355D271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8CFF83-D9B4-4835-9DD4-CA738355D271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8CFF83-D9B4-4835-9DD4-CA738355D271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8CFF83-D9B4-4835-9DD4-CA738355D271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3208129C-F559-4D7C-9A27-F2C7A05E023D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3208129C-F559-4D7C-9A27-F2C7A05E023D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3208129C-F559-4D7C-9A27-F2C7A05E023D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3208129C-F559-4D7C-9A27-F2C7A05E023D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973EAE45-71B6-4146-9EF7-E77DDCADA24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973EAE45-71B6-4146-9EF7-E77DDCADA24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973EAE45-71B6-4146-9EF7-E77DDCADA24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973EAE45-71B6-4146-9EF7-E77DDCADA24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F294BE-2F2F-4B85-948D-FD0C63166FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F294BE-2F2F-4B85-948D-FD0C63166FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F294BE-2F2F-4B85-948D-FD0C63166FB7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F294BE-2F2F-4B85-948D-FD0C63166FB7}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A1D88834-B4FF-4C3B-910F-6829D6AC7F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D88834-B4FF-4C3B-910F-6829D6AC7F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D88834-B4FF-4C3B-910F-6829D6AC7F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D88834-B4FF-4C3B-910F-6829D6AC7F86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0224C39-40E9-4365-BBCD-E470FAC54244} = {3F8A3CBF-543C-455D-972B-BCECBAADB392}
+		{53B1D8AE-9926-43DB-8CA9-CC90F4B702E9} = {39B98875-DB7E-4653-8B23-343BF6C9CE49}
+		{3208129C-F559-4D7C-9A27-F2C7A05E023D} = {2462AB6C-7BEA-43FE-BC05-525A9E9FA9E9}
+		{CEBA5593-C8F3-40B0-9D74-CA4CC36DC404} = {2462AB6C-7BEA-43FE-BC05-525A9E9FA9E9}
+		{3F8CFF83-D9B4-4835-9DD4-CA738355D271} = {119DF253-7B9C-4187-A72D-E422CF908200}
+		{973EAE45-71B6-4146-9EF7-E77DDCADA24F} = {119DF253-7B9C-4187-A72D-E422CF908200}
+		{45F294BE-2F2F-4B85-948D-FD0C63166FB7} = {4DB3AF81-2593-427D-931C-DE99756EEDE9}
+		{A1D88834-B4FF-4C3B-910F-6829D6AC7F86} = {4DB3AF81-2593-427D-931C-DE99756EEDE9}
+	EndGlobalSection
+EndGlobal
